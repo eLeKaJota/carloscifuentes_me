@@ -5,7 +5,6 @@ import NavBar from "./components/NavBar.js"
 import Content from "./components/Content.js"
 import Footer from "./components/Footer.js"
 import Home from "./components/Home.js"
-import img_portfolio from './res/img/proyectos.png';
 
 function App() {
 

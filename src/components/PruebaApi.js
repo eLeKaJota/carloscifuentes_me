@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import img_loading from "../res/img/loading.gif"
 
 export const Lbl = ({id = 'id', content = 'nota', fecha = 'fecha', important = 'importante'}) => {
 	return (

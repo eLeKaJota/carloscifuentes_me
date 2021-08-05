@@ -1,4 +1,4 @@
-const Project = () =>{
+const Mendibil = () =>{
 	return (
 		<div id="education">
 			<div className="img-project">
@@ -23,4 +23,4 @@ const Project = () =>{
 	)
 }
 
-export default Project;
+export default Mendibil;

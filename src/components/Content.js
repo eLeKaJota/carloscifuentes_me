@@ -1,7 +1,7 @@
 import Projects from "./Projects.js"
-import Education from "./Education.js"
-import Article from "./Article.js"
 import { PruebaApi } from "./PruebaApi.js";
+import Home from './Home'
+import Portfolio from './Portfolio'
 
 const Content = ({params}) =>{
 	const{page} = params;
@@ -9,9 +9,7 @@ const Content = ({params}) =>{
 	if (page === 'main'){
 		return (
 		<div id="content">
-			<Article/>
-			<Education/>
-			<Projects/>
+			<Home/>
 		</div>
 		);
 	}else if (page === 'proyectos'){
@@ -25,6 +23,12 @@ const Content = ({params}) =>{
 		<div id="content">
 			<PruebaApi/>
 		</div>
+		);
+	}else if (page === 'portafolio'){
+		return (
+			<div id="content">
+				<Portfolio/>
+			</div>
 		);
 	}
 	else{
