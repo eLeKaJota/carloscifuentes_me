@@ -2,6 +2,7 @@ import Projects from "./Projects.js"
 import { PruebaApi } from "./PruebaApi.js";
 import Home from './Home'
 import Portfolio from './Portfolio'
+import Callback from './Callback'
 
 const Content = ({params}) =>{
 	const{page} = params;
@@ -28,6 +29,12 @@ const Content = ({params}) =>{
 		return (
 			<div id="content">
 				<Portfolio/>
+			</div>
+		);
+	}else if (page === 'callback' || page === 'request-42'){
+		return (
+			<div id="content">
+				<Callback/>
 			</div>
 		);
 	}
