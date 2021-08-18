@@ -431,3 +431,59 @@
 	}
 }
 /* /LOADING */
+
+#ley_puesto{
+	display: flex;
+}
+
+.img_puesto{
+	padding: 3px;
+}
+
+.img_puesto img{
+	border-radius: 50%;
+}
+
+.txt_puesto{
+	padding: 3px;
+}
+
+#map_places .butacas{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%;
+}
+
+.escenario{
+	height: 50px;
+	background: #415A77;
+	text-align: center;
+	font-size: x-large;
+	color: #E0E1DD;
+}
+
+.escenario p{
+	padding-top: 8px;
+}
+
+.butaca{
+	text-align: center;
+	margin: 15px;
+	cursor: pointer;
+}
+
+.filas_butacas{
+	display: flex;
+}
+
+#map_place{
+	display: flex;
+	flex-direction: column;
+}
+
+#map_place .id_puesto{
+	font-size: x-small;
+	text-align: center;
+	margin-top: -25px;
+}
+

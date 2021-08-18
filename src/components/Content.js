@@ -3,6 +3,7 @@ import { PruebaApi } from "./PruebaApi.js";
 import Home from './Home'
 import Portfolio from './Portfolio'
 import Callback from './Callback'
+import Places from "./Places";
 
 const Content = ({params}) =>{
 	const{page} = params;
@@ -35,6 +36,13 @@ const Content = ({params}) =>{
 		return (
 			<div id="content">
 				<Callback/>
+			</div>
+		);
+	}
+	else if (page === 'places'){
+		return (
+			<div id="content">
+				<Places/>
 			</div>
 		);
 	}

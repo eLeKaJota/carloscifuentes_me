@@ -10,6 +10,7 @@ export const ResponsiveMenu = ()=>{
 					<MenuLink cl="navMenu" link="/portafolio" description="Portafolio"/>
 					<MenuLink cl="navMenu" link="/contacto" description="Contacto"/>
 					<MenuLink cl="navMenu" link="/prueba-api" description="Prueba"/>
+					<MenuLink cl="navMenu" link="/places" description="Places"/>
 					<li className="nav-responsive"><a onClick={() => {
 						const menu = document.querySelector('.responsive-menu')
 						if (menu.style.visibility === 'visible'){
@@ -40,7 +41,7 @@ const NavBar = () => {
 						<MenuLink cl="navMenu" link="/portafolio" description="Portafolio"/>
 						<MenuLink cl="navMenu" link="/contacto" description="Contacto"/>
 						<MenuLink cl="navMenu" link="/prueba-api" description="Prueba Api simple"/>
-						<MenuLink cl="navMenu" link="/request-42" description="Prueba Api 42"/>
+						<MenuLink cl="navMenu" link="/places" description="Places"/>
 						<li className="nav-responsive"><a href="javascript:void(0);" onClick={() => {
 							const menu = document.querySelector('.responsive-menu')
 							if (menu.style.visibility === 'visible'){
