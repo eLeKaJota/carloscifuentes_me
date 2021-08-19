@@ -4,6 +4,7 @@ import Home from './Home'
 import Portfolio from './Portfolio'
 import Callback from './Callback'
 import Places from "./Places";
+import Chart from './Chart'
 
 const Content = ({params}) =>{
 	const{page} = params;
@@ -43,6 +44,13 @@ const Content = ({params}) =>{
 		return (
 			<div id="content">
 				<Places/>
+			</div>
+		);
+	}
+	else if (page === 'chart'){
+		return (
+			<div id="content">
+				<Chart/>
 			</div>
 		);
 	}

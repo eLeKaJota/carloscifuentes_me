@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 const getNotes = () => {
-    return axios.get('https://thawing-reaches-53136.herokuapp.com/callback' + window.location.search).then(res => res.data)
+    return axios.get('http://localhost:3001/callback' + window.location.search).then(res => res.data)
 };
 const getUser = (token) => {
   console.log('token', token)
@@ -9,7 +9,7 @@ const getUser = (token) => {
     headers: {
       'Authorization': 'Bearer ' + token
     },
-  }).then(res => res)
+  }).then(res => res.data)
     .catch(err => {
       console.log('errrr:::', err)
     })
@@ -23,7 +23,7 @@ const [token, setToken] = useState("")
 
   return (
     <>
-    <a href="https://api.intra.42.fr/oauth/authorize?client_id=8119a88810efccec0eebc0f1b5d1f50f28d1dcb17c15bc7457047c3ff3ea80fd&redirect_uri=https%3A%2F%2Fcarloscifuentes.me%2Fcallback&response_type=code"><button>Log in</button></a>
+    <a href="https://api.intra.42.fr/oauth/authorize?client_id=8119a88810efccec0eebc0f1b5d1f50f28d1dcb17c15bc7457047c3ff3ea80fd&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code"><button>Log in</button></a>
     <button onClick={() => {
       console.log(window.location)
       getNotes().then(res => {setToken(res)})
