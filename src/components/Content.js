@@ -5,6 +5,7 @@ import Portfolio from './Portfolio'
 import Callback from './Callback'
 import Places from "./Places";
 import Chart from './Chart'
+import BuyTicket from './BuyTicket'
 
 const Content = ({params}) =>{
 	const{page} = params;
@@ -51,6 +52,13 @@ const Content = ({params}) =>{
 		return (
 			<div id="content">
 				<Chart/>
+			</div>
+		);
+	}
+	else if (page === 'buy-ticket'){
+		return (
+			<div id="content">
+				<BuyTicket/>
 			</div>
 		);
 	}
