@@ -5,10 +5,12 @@ import {useEffect, useState} from 'react'
 import axios from 'axios'
 import {Redirect} from "react-router-dom";
 import BuyTicket from "./BuyTicket";
+import { useLocation } from 'wouter'
 
 const Chart = ({params}) => {
   let chart = null;
   const [resp, setResp] = useState('')
+  const [location, setLocation] = useLocation();
   useEffect(()=>{
     console.log(params.event)
     console.log(params.num)
@@ -41,10 +43,10 @@ const Chart = ({params}) => {
           seats: chart.selectedObjects,
           hold: JSON.parse(sessionStorage.getItem('seatsio'))
         }
-        axios.post('http://localhost:3001/book', book)
+        axios.post('https://thawing-reaches-53136.herokuapp.com/book', book)
           .then((res) => {
               console.log(res.data);
-                setResp(res.data)
+                setLocation("/confirm")
           })
 
       }}>Enviar</button>

@@ -9,8 +9,9 @@ export const ResponsiveMenu = ()=>{
 					<MenuLink cl="navMenu" link="/proyectos" description="Proyectos"/>
 					<MenuLink cl="navMenu" link="/portafolio" description="Portafolio"/>
 					<MenuLink cl="navMenu" link="/contacto" description="Contacto"/>
-					<MenuLink cl="navMenu" link="/prueba-api" description="Prueba"/>
-					<MenuLink cl="navMenu" link="/places" description="Places"/>
+					<MenuLink cl="navMenu" link="/buy-ticket" description="Tickets"/>
+					{/*<MenuLink cl="navMenu" link="/prueba-api" description="Prueba"/>*/}
+					{/*<MenuLink cl="navMenu" link="/places" description="Places"/>*/}
 					<li className="nav-responsive"><a onClick={() => {
 						const menu = document.querySelector('.responsive-menu')
 						if (menu.style.visibility === 'visible'){
@@ -40,8 +41,9 @@ const NavBar = () => {
 						<MenuLink cl="navMenu" link="/proyectos" description="Proyectos"/>
 						<MenuLink cl="navMenu" link="/portafolio" description="Portafolio"/>
 						<MenuLink cl="navMenu" link="/contacto" description="Contacto"/>
-						<MenuLink cl="navMenu" link="/prueba-api" description="Prueba Api simple"/>
-						<MenuLink cl="navMenu" link="/places" description="Places"/>
+						<MenuLink cl="navMenu" link="/buy-ticket" description="Tickets"/>
+						{/*<MenuLink cl="navMenu" link="/prueba-api" description="Prueba Api simple"/>*/}
+						{/*<MenuLink cl="navMenu" link="/places" description="Places"/>*/}
 						<li className="nav-responsive"><a href="javascript:void(0);" onClick={() => {
 							const menu = document.querySelector('.responsive-menu')
 							if (menu.style.visibility === 'visible'){
